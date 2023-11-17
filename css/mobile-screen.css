@@ -1,0 +1,209 @@
+.show-when-mobile {
+  display: block;
+  color: #f2f2f2;
+}
+
+.hide-when-mobile {
+  display: none;
+}
+
+.swiper-button-next,.swiper-button-prev{
+display: none;
+}
+
+.backgrond span , #demo{
+font-size: 12px;
+text-transform: uppercase;
+font-weight: 600;
+
+
+}
+.MANCITY2 , .MANUTD .MANCITY2{
+  width: 90%;
+  height: 300px;
+  object-fit: unset;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 5%;
+
+  margin-right: 5%;
+}
+.ManchesterCity .jj{
+  display: none;
+    }
+
+.Now{
+  margin-top: 100px;
+}
+.swiper-slide .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: unset;
+}
+/* ====================================
+    1. Font Awesom hamburger menu
+======================================= */
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+input {
+  display: none;
+}
+
+
+.fa-bars {
+  font-size: 30px;
+  transform: scaleX(1.4);
+}
+
+.input_field {
+  display: block;
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border-radius: 9px;
+  outline: none;
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+.fas{
+  position: absolute;
+  right: 10vw;
+}
+
+/* ====================================
+    2. show on click
+======================================= */
+
+.show-on-click {
+  display: none;
+  border-top: 2px solid black;
+}
+
+#burger:checked + .show-on-click {
+  display: block;
+}
+
+label{
+  font-size: 22px;
+  /* border: 2px solid red; */
+  display: block;
+  padding: 20px;
+}
+
+label:hover,
+.fa-bars:hover,
+.sub-div li a:hover,
+
+label:hover .fas
+
+{
+  color: cyan;
+  letter-spacing: 2px;
+}
+
+.sub-div li a{
+  
+  display: block;
+}
+
+.main-div{
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+}
+
+/* ====================================
+    3. sub of div
+======================================= */
+
+.sub-div {
+  display: none;
+}
+
+#html:checked + .sub-div,
+#css:checked + .sub-div,
+#css2:checked + .sub-div,
+#css3:checked + .sub-div,
+#css4:checked + .sub-div,
+#mini1:checked  + .sub-div,
+#mini2:checked  + .sub-div,
+#mini3:checked  + .sub-div,
+#mini4:checked  + .sub-div,
+#mini5:checked  + .sub-div,
+#mini6:checked  + .sub-div,
+#mini7:checked  + .sub-div,
+#mini8:checked  + .sub-div,
+#mini9:checked  + .sub-div,
+#mini10:checked  + .sub-div,
+#mini11:checked  + .sub-div,
+#mini12:checked  + .sub-div,
+#mini13:checked  + .sub-div,
+#mini14:checked  + .sub-div,
+
+#js:checked + .sub-div {
+  display: block;
+}
+
+
+.sub-div li{
+  font-size: 17px;
+  padding: 10px 0 10px 35px;
+}
+
+
+
+/* ====================================
+    3. sub sub of css
+======================================= */
+.sub-sub-div{
+  display: none;
+  margin-top: 17px;
+}
+
+#mini:checked + .sub-sub-div ,
+#mini1:checked + .sub-sub-div ,
+#mini2:checked + .sub-sub-div ,
+
+#mini3:checked + .sub-sub-div ,
+#mini4:checked + .sub-sub-div ,
+#mini5:checked + .sub-sub-div ,
+#mini6:checked + .sub-sub-div ,
+#mini7:checked + .sub-sub-div ,
+#mini8:checked + .sub-sub-div ,
+#mini9:checked + .sub-sub-div ,
+#mini10:checked + .sub-sub-div ,
+#mini11:checked + .sub-sub-div ,
+#mini12:checked + .sub-sub-div ,
+#mini13:checked + .sub-sub-div ,
+#mini14:checked + .sub-sub-div 
+ {
+  display: block;
+}
+
+
+.mini-projects{
+  padding: 0;
+  font-size: 17px;
+}
+
+.bigger{
+  background-color:#fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+
+}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liverpool FC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/Liverpool FC.css" />
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/Dark Mode.css">
+
+    <link
+    rel="stylesheet"
+    href="../css/mobile-screen.css"
+    media="(max-width: 900px)"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  </head>
+  <body id="body" >
+    <div class="loader_bg">
+      <div class="loader"></div>
+  </div>
+    <span class="up"><i class="fa-solid fa-circle-up"><br> <i style="font-size: 20px;  ">top</i></i><br></span>
+    <header class="hide-when-mobile">
+      <a href="index.html">
+        <h1 class="title" style="margin-left: 30px;">
+          <span class="title-word title-word-1">sport</span>
+          <span class="title-word title-word-2"> shop </span>
+      
+        </h1>
+  </a>
+
+      <ul class="flex"  >
+        <li class="main-list">
+          <div id="toggle-btn" class="fas fa-sun"></div>
+
+      </li>
+      
+      
+        <li class="main-list"><a class="main-link" href="index.html"> Home</a></li>
+        <li class="main-list">
+          <a class="main-link" href="#"> Premier League</a>
+
+          <ul class="sub-ul" style="margin-left: 40px;">
+            <li class="mini-projects1">
+              <a href="mancity.html" > man city </a>
+            
+            </li>
+
+            <li class="mini-projects2">
+              <a href="MANUNITED.html">man united</a>
+
+      
+            </li>
+
+            <li class="mini-projects3">
+              <a href="ARSENAL.html">arsenal</a>
+      
+            </li>
+
+          
+            <li class="mini-projects4">
+              <a href="TOTTENHAM.html">tottenham</a>
+
+            
+            </li>
+
+
+            <li class="mini-projects4">
+              <a href="Liverpool FC.html">liverpool</a>
+
+            
+            </li>
+          </ul>
+        </li>
+
+        <li class="main-list">
+          <a class="main-link" href="#"> laliga </a>
+
+          <ul class="sub-ul">
+            <li class="mini-projects1">
+              <a href="FC Barcelona.html">FC Barcelona</a>
+
+            </li>
+            <li class="mini-projects2">
+              <a href="Real Madrid.html">Real Madrid</a>
+            
+            </li>
+          
+        
+          </ul>
+        </li>
+        <li class="main-list">
+          <a class="main-link" href="#"> ligue 1</a>
+
+          <ul class="sub-ul">
+            <li class="mini-projects1">
+              <a href="PSG.html">PSG</a>
+
+            
+            </li>
+            <li class="mini-projects2">
+              <a href="MARSEILLE.html">Marseille</a>
+
+            
+            </li>
+          
+          </ul>
+        </li>
+
+        <li class="main-list">
+          <a class="main-link" href="#"> serie A</a>
+
+          <ul class="sub-ul">
+            <li class="mini-projects1">
+              <a href="AC MILAN.html">AC Milan</a>
+
+          
+            </li>
+            <li class="mini-projects2">
+              <a href="Inter Milan.html">Inter Milan</a>
+
+            
+            </li>
+            <li class="mini-projects2">
+              <a href="JUVENTUS.html">Juventus</a>
+
+            
+            </li>
+      
+          
+          </ul>
+        </li>
+
+    
+
+
+
+
+
+      </ul>
+    
+    </header>
+    <header class="show-when-mobile">
+      <h1 class="title" style="margin-right: 110px; ">
+        <span class="title-word title-word-1">sport</span>
+        <span class="title-word title-word-2"> shop </span>
+    
+      </h1>
+
+      <label class="absolute" for="burger">
+        
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <input id="burger" type="checkbox" />
+
+      <div class="show-on-click">
+    
+    
+        <div class="main-div">
+          <label for="html"><a class="main-link" href="index.html"> Home</a></label>
+          <input id="html" type="checkbox" />
+        </div>
+
+        <div class="main-div">
+          <label for="css">Premier League<i class="fas fa-plus"></i> </label>
+          <input id="css" type="checkbox" />
+
+          <ul class="sub-div">
+            <!-- Premier League< -->
+            <li>
+              <label class="mini-projects" for="mini"
+                ><a href="mancity.html" >man city </a>
+              </label>
+              <input id="mini" type="checkbox" />
+
+              <ul class="sub-sub-div">
+              
+
+
+
+                <li><a href="MANUNITED.html">man united</a></li>
+                <li><a href="ARSENAL.html">arsenal</a></li>
+                <li><a href="TOTTENHAM.html">tottenham</a></li>
+                <li><a href="Liverpool FC.html">liverpool</a></li>
+              </ul>
+            </li>
+
+            <!-- laliga  -->
+            <li>
+              <label class="mini-projects" for="mini1">
+                <a href="MANUNITED.html">man united</a>
+              </label>
+              <input id="mini1" type="checkbox" />
+
+              <ul class="sub-sub-div">
+                <li><a href="FC Barcelona.html">FC Barcelona</a></li>
+                <li><a href="Real Madrid.html">Real Madrid</a></li>
+            
+              </ul>
+            </li>
+            <!-- bundesliga -->
+            <li>
+              <label class="mini-projects" for="mini2"
+                ><a href="ARSENAL.html">arsenal</a>
+              </label>
+              <input id="mini2" type="checkbox" />
+
+            
+            </li>
+
+          
+            <!-- Serie A -->
+            <li>
+              <label class="mini-projects" for="mini4"
+                ><a href="TOTTENHAM.html">tottenham</a>
+              </label>
+              <input id="mini4" type="checkbox" />
+
+              <ul class="sub-sub-div">
+                <li><a href="">AC Milan</a></li>
+                <li><a href="">Inter Milan</a></li>
+                <li><a href="">Juventus</a></li>
+                <li><a href="">Lazio</a></li>
+                <li><a href="">Roma </a></li>
+              </ul>
+            </li>
+
+
+
+
+            <li>
+              <label class="mini-projects" for="mini4"
+                ><a href="Liverpool FC.html">liverpool</a>
+              </label>
+              <input id="mini4" type="checkbox" />
+
+              <ul class="sub-sub-div">
+                <li><a href="">AC Milan</a></li>
+                <li><a href="">Inter Milan</a></li>
+                <li><a href="">Juventus</a></li>
+                <li><a href="">Lazio</a></li>
+                <li><a href="">Roma </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          
+        </div>
+
+        <div class="main-div">
+          <label for="css2">laliga <i class="fas fa-plus"></i> </label>
+          <input id="css2" type="checkbox" />
+
+          <ul class="sub-div">
+            <!-- Premier League< -->
+            <li>
+              <label class="mini-projects" for="mini5"
+                ><a href="FC Barcelona.html">FC Barcelona</a>
+              </label>
+              <input id="mini5" type="checkbox" />
+
+            
+            </li>
+
+            <!-- laliga  -->
+            <li>
+              <label class="mini-projects" for="mini6">
+                <a href="Real Madrid.html">Real Madrid</a>
+              </label>
+              <input id="mini6" type="checkbox" />
+
+              
+            </li>
+            <!-- bundesliga -->
+          
+
+          
+          </ul>
+        </div>
+
+        <div class="main-div">
+          <label for="css3">ligue 1 <i class="fas fa-plus"></i> </label>
+          <input id="css3" type="checkbox" />
+
+          <ul class="sub-div">
+            <!-- Premier League< -->
+            <li>
+              <label class="mini-projects" for="mini9"
+                ><a href="PSG.html">PSG</a>
+              </label>
+              <input id="mini9" type="checkbox" />
+
+            
+            </li>
+
+            <!-- laliga  -->
+            <li>
+              <label class="mini-projects" for="mini10">
+                <a href="MARSEILLE.html">Marseille</a>
+              </label>
+              <input id="mini10" type="checkbox" />
+
+            
+            </li>
+            <!-- bundesliga -->
+
+        
+
+            <!-- Serie A -->
+          </ul>
+        </div>
+
+        <div class="main-div">
+          <label for="css4">serie a <i class="fas fa-plus"></i> </label>
+          <input id="css4" type="checkbox" />
+
+          <ul class="sub-div">
+            <!-- Premier League< -->
+            <li>
+              <label class="mini-projects" for="mini12"
+                ><a href="AC MILAN.html">AC Milan</a>
+              </label>
+              <input id="mini12" type="checkbox" />
+
+            
+            </li>
+
+            <!-- laliga  -->
+            <li>
+              <label class="mini-projects" for="mini13">
+                <a href="Inter Milan.html">Inter Milan</a>
+              </label>
+              <input id="mini13" type="checkbox" />
+
+        
+            </li>
+            <li>
+              <label class="mini-projects" for="mini13">
+                <a href="JUVENTUS.html">Juventus</a>
+              </label>
+              <input id="mini13" type="checkbox" />
+
+        
+            </li>
+      
+            <!-- bundesliga -->
+
+            <!-- Serie A -->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+
+
+
+<div class="content3">
+
+    <main id="sec">
+    
+
+      <section id="h2" class="set">
+        <h1 dir="rtl" class="h2"  id="Autowriting"> Liverpool FC  </h1>
+
+        <div    id="containerproduct"   class="flex-pro">
+  
+          <div class="card mycard " style="width: 20rem; height: 35rem ;">
+            <div class="outer">
+            <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;"  src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC1.png" class="card-img-top" alt="...">
+          <div class="inner">
+            <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC2.png" class="card-img-top" alt="">
+          </div>
+          </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Match Home Shirt
+              </b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, voluptate cum magni dolorem nesciunt accusamus, dolores necessitatibus at repellendus eos illo quaerat laborum nihil ea.</p> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£125.00</b></i> </span>
+              <br><br>
+              <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a>
+              <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC3.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC4.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Home Shirt</b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£85.00
+              </b></i> </span>
+                            <br><br>    <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+                            <i class="fa-solid fa-heart  heart" id="heart"></i>
+                          </div>
+          </div>          
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC5.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC6.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Match Away Shirt</b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£125.00</b></i> </span><br> <br>
+                            <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+                            <i class="fa-solid fa-heart  heart" id="heart"></i>
+                          </div>
+          </div>           
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC7.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC8.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/23 Match Third Shirt</b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£80.00</b></i> </span><br><br>
+                            <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+                            <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>          
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC9.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC10.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Home Kit Infant
+              </b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£50.00</b></i> </span> <br> <br>
+                            <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+                            <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>          
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC11.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC12.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Home Shirt Women's
+              </b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£80.00</b></i> </span> <br> <br>
+              <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+              <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>  
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC13.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC14.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Third Shirt Junior</b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£60.00</b></i> </span> <br> <br>
+              <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+              <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>    
+          <div class="card mycard" style="width: 20rem; height: 35rem ;">
+            
+            <div class="outer">
+              <img style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC15.png" class="card-img-top" alt="...">
+            <div class="inner">
+              <img  style="border-radius : 5px; width: 20rem; height: 100%; object-fit: fill;" src="../images/PREMIER LEAGUE Liverpool FC/Liverpool FC16.png" class="card-img-top" alt="">
+            </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><b>Nike Liverpool FC 2023/24 Away Shirt Women's</b></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum sed harum earum pariatur ea quod facere cumque non mollitia. Aliquid veritatis nesciunt eum harum.</p> <br> -->
+              <span  style="margin-left: 80px; "> <i class="bi bi-cart-plus-fill" style="margin-left: 130px; margin-bottom: 50px; font-size: 15px;" ><b>£80.00</b></i> </span> <br> <br>
+              <a   href="#"  class="js-buy btn btn-primary" style="text-align: center; padding:10px 30px; width: 80%;">buy</a> 
+              <i class="fa-solid fa-heart  heart" id="heart"></i>
+            </div>
+          </div>  
+
+
+</div>
+<button type="button" class="btn btn-danger"   id="addprod" style="color: black;" ><b>More product</b></button>
+
+<div class="bigger-contaier">
+          
+  <div id="visa" class="container">
+  
+
+
+
+  
+      <form class="form">
+    
+        <div class="separator">
+          <hr class="line">
+          <p><b>  Delivery information📋</b></p>
+          <hr class="line">
+        </div>
+        <div class="credit-card-info--form">
+
+
+
+
+          <div class="input_container">
+            <label for="password_field" class="input_label"><b>Card holder full name</b></label>
+            <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name">
+          </div>
+
+          <div class="input_container">
+            <label for="password_field" class="input_label"><b>Card Number</b></label>
+            <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+          </div>
+          <div class="input_container">
+            <label for="password_field" class="input_label"><b>Expiry Date / CVV</b></label>
+            <div class="split">
+            <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+
+            <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+          </div>
+          </div>
+      
+        </div>
+        <button class="btn btn-primary aywaa" style="margin-top: 20px;" > submit </button>
+      </form>
+    
+    
+    </div>
+
+
+    <p id="kahyaan" class="container" style="text-align: center;">
+      Payment made, thanks😉    </p>
+
+
+
+
+
+</div>
+      </section>
+    </main>
+  
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer  -->
+
+
+<!-- end footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+  }, 1500);
+</script>
+<script src="../javascript/scroll.js"></script>
+
+
+
+    <script src="../javascript/Liverpool FC  click on buy  .js"></script>
+    <script src="../javascript/Liverpool FC add product .js"></script>
+    <script src="../javascript/Like heart .js"></script>
+<script src="../javascript/Dark Mode.js"></script>
+    
+
+  
+  </body>
+</html>

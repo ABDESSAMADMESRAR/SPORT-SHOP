@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #000;
+
+
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+
+
+.title {
+  font-family: "Montserrat", sans-serif;
+
+font-weight: 800;
+font-size: 25px;
+  padding: 19px ;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ===============
+   1.  ul class .flex
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: center;
+  height: 76px;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-list {
+  padding: 24px;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-link {
+  padding: 8px 15px;
+  color: #f2f2f2;
+
+}
+
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+
+}
+/* =======================================
+   1.1 sub HTML + css + JavaScript
+======================================== */
+
+.sub-ul {
+  display: none;
+  text-transform: uppercase;
+  z-index: 999;
+  position: absolute;
+  top: 59px;
+  left: -15px;
+  border-top: 1px solid cyan;
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 155px;
+}
+
+.sub-of-js {
+  left: 10px;
+}
+
+.sub-ul li {
+  padding: 8px 0;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+
+.sub-ul li a:hover {
+  color: cyan;
+  font-weight: bold;
+}
+
+.main-list:hover .sub-ul {
+  display: block;
+}
+
+/* =======================================
+   1.2 sub sub of CSS
+======================================== */
+
+.sub-sub-ul {
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  gap: 5px;
+
+  border-top: 1px solid cyan;
+
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 150px;
+
+  display: none;
+}
+
+.mini-projects:hover .sub-sub-ul {
+  display: block;
+}
+
+
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+
+/* 
+=================
+end Header css
+=================
+*/
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  border-radius: 90px;
+  padding: 5px;
+  z-index: 999;
+  cursor: pointer;
+  font-family: Arial, Tahoma;
+  transition: 0.2s all;
+  display: none;
+  background-color: #f7f5f6;
+}
+.up.show {
+  display: block;
+}
+.up i.top {
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+}
+
+.h2 {
+  text-align: center;
+  padding: 10px 0;
+
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #3d4a59;
+  color: #fff;
+  border-radius: 17px;
+
+  padding: 15px;
+}
+
+section {
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 25px rgb(179, 172, 172);
+
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 13px;
+  margin-top: 30px;
+
+  padding: 45px 0;
+}
+
+.dark section {
+  box-shadow: 5px 5px 25px rgb(124, 97, 97);
+}
+
+.flex {
+  display: flex;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mycard {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 50px;
+
+  border-radius: 5px;
+}
+
+
+
+.flex-pro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#hiddenul {
+  display: block;
+  position: absolute;
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 60%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #3d4a59;
+  margin-right: 1rem;
+  background-color: #fff;
+
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  min-width: 100px;
+
+  margin-top: 11px;
+}
+
+/* zoom image css hover  and Change Image on Hover */
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.outer:hover .inner {
+  display: block;
+  transform: scale(1.01);
+}
+.outer {
+  overflow: hidden;
+}
+
+
+.outer {
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+}
+/* end */
+.container {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 60%;
+
+  padding: 20px 0;
+}
+.container p {
+  font-size: 20px;
+}
+
+.active {
+  display: block !important;
+}
+
+.bigger-contaier {
+  background-color: rgb(221, 185, 185);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.dark .card-body {
+  color: #000;
+}
+
+.flex-pro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+#addprod {
+  margin: 20px 40px;
+  background: transparent;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: initial;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+#addprod:hover {
+  background: #83b6eb;
+  color: #fff;
+  border: none;
+}
+
+#heart {
+  color: gray;
+  font-size: 25px;
+  margin-left: 20px;
+}
+#heart.red {
+  color: red;
+}
+
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+/* Create an Accordion*/
+
+.q1,
+.q2,
+.q3 {
+  margin: 40px auto;
+
+  width: 20%;
+}
+
+.plus {
+  font-size: 40px;
+}
+
+
+
+
+
+/*responsive*/
+@media (max-width: 767px) {
+
+  .MANCITY2 {
+    width: 90%;
+    height: 300px;
+    object-fit: unset;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: auto;
+  }
+
+
+  .MANUTD .jj{
+    display: none;
+      }
+}
+
+@media (max-width: 1000px) {
+  .div button {
+    display: none;
+      }
+      .MANUTD p {
+        display: none;
+          }
+}
+
+
+  
+  
+  
+
+
+
+
+@media (max-width: 386px) {
+
+  .MANUTD {
+display: none;
+      }
+  
+  
+
+}
+
+
+.MANCITY2 {
+  width: 90%;
+  height: 300px;
+  object-fit: unset;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+.MANUTD h4 {
+  color: #f8fbfe;
+  position: absolute;
+  top: 140px;
+  left: 70px;
+  text-transform: uppercase;
+}
+.MANUTD p {
+  color: #f8fbfe;
+  position: absolute;
+  bottom: 300px;
+  left: 70px;
+  font-size: 14px;
+text-wrap: balance;
+  line-height: 18px;
+  font-style: italic;
+}
+
+.div button {
+  background-color: #d0d6dc;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 430px;
+
+  left: 70px;
+  padding: 5px 5px;
+  transition: 0.4s all;
+}
+.div button:hover {
+  background-color: #151515;
+  color: #fff;
+}
+.div .btn2 {
+  background-color: #d0d6dc;
+
+  position: absolute;
+  bottom: 430px;
+  left: 190px;
+}
+.div .btn3 {
+  background-color: #d0d6dc;
+
+  position: absolute;
+  bottom: 430px;
+  left: 330px;
+}
+.div .btn4 {
+  background-color: #d0d6dc;
+
+  position: absolute;
+  bottom: 430px;
+  left: 470px;
+}
+.div .btn5 {
+  background-color: #d0d6dc;
+
+  position: absolute;
+  bottom: 380px;
+  left: 70px;
+}
+
+.loader_bg{
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.loader{
+  border: 0 soild transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+  content: '';
+  border: 1em solid #ff5733;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+}
+@keyframes loader{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.payment--options {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 20px;
+  padding: 10px;
+}
+
+.payment--options button {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+.payment--options button svg {
+  height: 18px;
+}
+
+.payment--options button:last-child svg {
+  height: 22px;
+}
+
+.separator {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  color: #8B8E98;
+  margin: 0 10px;
+}
+
+.separator > p {
+  word-break: keep-all;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  margin: auto;
+}
+
+.separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+  margin: auto;
+}
+
+.credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 15px;
+}
+
+.split input {
+  width: 100%;
+}
+
+.input_label {
+  font-size: 15px;
+  color: #8B8E98;
+  font-weight: 600;
+}
+
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border-radius: 9px;
+  outline: none;
+  background-color: #F2F2F2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+.purchase--btn {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
+  box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.container {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 60%;
+
+  padding: 20px 0;
+}
+.container p {
+  font-size: 20px;
+}
+
+.purchase--btn:hover {
+  box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_field[type=number] {
+  -moz-appearance: textfield;
+}

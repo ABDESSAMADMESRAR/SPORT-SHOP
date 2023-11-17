@@ -1,0 +1,100 @@
+body.dark {
+  --white: #393646;
+  --black: #fff;
+}
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.content2 {
+  width: 100%;
+  padding-bottom: 40px;
+
+  background-color: var(--white);
+}
+.content h1 {
+  font-size: 7vw;
+  color: var(--black);
+}
+.content2 h2 {
+  font-size: 3vw;
+  color: var(--black);
+  margin-left: 20px;
+}
+.content2 .card-body p {
+  color: var(--black);
+}
+
+.content .Periodicals h3 {
+  color: var(--black);
+}
+.content .teamsPremierLeague .Arsenal p,
+.Liverpool p,
+.ManchesterCity p,
+.ManchesterUnited p,
+.TottenhamHotspur p {
+  color: var(--black);
+}
+
+.content .England p,
+.content .Wales p,
+.content .Belgium p,
+.content .Spain p,
+.content .Celtic p,
+.content .Rangers p,
+.content .PSG p,
+.content .BayernMunich p,
+.content .FCBarcelona p,
+.content .RealMadrid p,
+.content .Juventus p,
+.content .InterMilan p,
+.content .AFCAjax p,
+.content .BorussiaDortmund p {
+  color: var(--black);
+}
+.content3 ,body {
+
+  width: 100%;
+  padding-bottom: 60px;
+
+
+  background-color: var(--white);
+}
+.content3 , #addprod{
+  color: #fff;
+}
+
+#toggle-btn {
+  height: 70px;
+  width: 70px;
+  line-height: 69px;
+  border-radius: 50%;
+  color: var(--white);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 2px;
+  right: 30px;
+}
+
+#toggle-btn.fa-moon {
+  transform: rotate(360deg);
+}
+
+

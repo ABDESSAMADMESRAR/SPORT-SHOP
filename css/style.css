@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+html,
+body {
+
+  background-color: #f2f2f2;
+  height: 100%;
+  color: #000;
+
+}
+
+
+
+
+header {
+  background-color: #000;
+
+
+
+}
+
+
+
+
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 19px ;
+  text-transform: uppercase;
+}
+
+/* ===============
+   1.  ul class .flex
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-list {
+  padding: 24px;
+  font-size: 17px;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-link {
+  padding: 8px 15px;
+  color: #f2f2f2;
+
+}
+
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+
+}
+
+/* =======================================
+   1.1 sub HTML + css + JavaScript
+======================================== */
+
+.sub-ul {
+  display: none;
+  text-transform: uppercase;
+  z-index: 999;
+  position: absolute;
+  top: 59px;
+  left: -15px;
+  border-top: 1px solid cyan;
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 155px;
+}
+
+.sub-of-js {
+  left: 10px;
+}
+
+.sub-ul li {
+  padding: 8px 0;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+
+.sub-ul li a:hover {
+  color: cyan;
+  font-weight: bold;
+}
+
+.main-list:hover .sub-ul {
+  display: block;
+}
+
+/* =======================================
+   1.2 sub sub of CSS
+======================================== */
+
+.sub-sub-ul {
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  gap: 5px;
+
+  border-top: 1px solid cyan;
+
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 150px;
+
+  display: none;
+}
+
+.mini-projects:hover .sub-sub-ul {
+  display: block;
+}
+
+
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+
+/* 
+=================
+end Header css
+=================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider home */
+
+.swiper {
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: unset;
+}
+.backgrond {
+  background-color: #ffed03;
+  height: 50px;
+  text-align: center;
+  color: #000;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  font-family: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backgrond p {
+  margin-left: 10px;
+  font-family: initial;
+  font-weight: 800;
+  font-size: 15px;
+  color: #000;
+}
+@media (max-width: 1024px) {
+
+
+  .container .img {
+    width: 100%;
+    height: 40%;
+    object-fit: fill;
+    margin-top: 60px;
+    border-radius: 6px;
+  }
+}
+/* Football League */
+.Periodicals {
+  color: #000;
+  font-size: 10px;
+  padding: 10px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px;
+  gap: 40px;
+}
+.PremierLeague,
+.InternationalKits,
+.FootballLeague,
+.ScottishPremierLeague,
+.EuropeanLeagues {
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  padding: 7px 7px;
+  cursor: pointer;
+  color: #fff;
+}
+.InternationalKits #cc:hover,
+.PremierLeague #b:hover,
+.ScottishPremierLeague #cc2:hover, 
+.EuropeanLeagues #cc3:hover{
+  color: white;
+  background-color: #000;
+}
+
+
+.InternationalKits:hover,
+.FootballLeague:hover,
+.ScottishPremierLeague:hover,
+.EuropeanLeagues:hover {
+  background-color: #000;
+  color: #fff;
+
+}
+.b,
+.cc,
+.cc2,
+.cc3 {
+  background-color: #000;
+  color: #f2f2f2;
+}
+
+.teamsPremierLeague {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.Arsenal img,
+.Chelsea img,
+.Liverpool img,
+.ManchesterCity img,
+.ManchesterUnited img,
+.Newcastle img,
+.TottenhamHotspur img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+
+  /* border-radius: 40%; */
+}
+.Arsenal p,
+.Chelsea p,
+.Liverpool p,
+.ManchesterCity p,
+.ManchesterUnited p,
+.Newcastle p,
+.TottenhamHotspur p {
+  font-size: 15px;
+  text-align: center;
+}
+.teamsPremierLeague3 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.Celtic img,
+.Rangers img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+.Celtic p,
+.Rangers p {
+  font-size: 15px;
+  text-align: center;
+}
+.teamsPremierLeague4 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.PSG img,
+.BayernMunich img,
+.FCBarcelona img,
+.RealMadrid img,
+.Juventus img,
+.InterMilan img,
+.AFCAjax img,
+.BorussiaDortmund img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+.PSG p,
+.BayernMunich p,
+.FCBarcelona p,
+.RealMadrid p,
+.Juventus p,
+.InterMilan p,
+.AFCAjax p,
+.BorussiaDortmund p {
+  font-size: 15px;
+  text-align: center;
+}
+.teamsPremierLeague2 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.England img,
+.Wales img,
+.Belgium img,
+.Spain img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+.England p,
+.Wales p,
+.Scotland p,
+.Belgium p,
+.Spain p {
+  font-size: 15px;
+  text-align: center;
+}
+.container .img {
+  width: 100%;
+  height: 40%;
+  object-fit: fill;
+  margin-top: 60px;
+  border-radius: 6px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shopNow {
+  position: absolute;
+  top: 450px;
+  right: 20px;
+  background-color: #f2f2f2;
+}
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #f7f5f6;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #000000;
+  z-index: -1;
+}
+button:hover,
+button:focus {
+  color: white;
+}
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+.direction {
+  text-align: center;
+}
+.direction button {
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #ffffff44;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+.direction button:hover {
+  background-color: #ffffff;
+}
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  border-radius: 90px;
+  padding: 5px;
+  z-index: 999;
+  cursor: pointer;
+  font-family: Arial, Tahoma;
+  display: none;
+  transition: 0.2s all;
+  background-color: #ffff;
+}
+.up.show {
+  display: block;
+}
+.up i.top {
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+  left: 2px;
+
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.outer:hover .inner {
+  display: block;
+  transform: scale(1.01);
+}
+.outer {
+  overflow: hidden;
+}
+.outer {
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+}
+.parent-of-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 100%;
+
+  margin: 30px auto 0;
+}
+.price {
+  color: crimson;
+  font-size: 18px;
+  font-weight: 500;
+}
+.done-pop-up {
+  position: fixed;
+  top: 20px;
+  right: 50%;
+  background-color: #ff3d3d;
+  transform: translateX(50%);
+
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+
+  background-color: #74cccc;
+  border-radius: 12px;
+  width: 30vw;
+  text-align: center;
+  padding: 20px 0;
+
+  transition: all 0.8s;
+}
+.dark .done-pop-up {
+  background-color: rgba(252, 221, 45, 0.952);
+}
+.show-items {
+  position: fixed;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+
+  padding: 12px 8px;
+  background-color: #ff3d3d;
+  top: 2vh;
+  right: 1vw;
+  border-radius: 7px;
+
+  background-color: #ff3d3d[];
+}
+
+.back-screen {
+  z-index: 55;
+  background-color: #282a35;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transform: translateX(110vw);
+  transition: all 1s;
+
+  overflow-y: scroll;
+}
+.back-screen #close {
+  font-size: 37px;
+  opacity: 1 !important;
+}
+
+ /* star footer  */
+ 
+ 
+.row22{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col22{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col22 h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform:uppercase;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col22 h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	width: 50px;
+}
+.footer-col22 ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col22 ul li a{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col22 ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col22 .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col22 .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col22{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col22{
+    width: 100%;
+}
+
+}
+
+
+
+ 
